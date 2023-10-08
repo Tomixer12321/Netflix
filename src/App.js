@@ -7,12 +7,12 @@ const [typeOfMovie,settypeOfMovie]=useState("komedie")
 const vyslednefilmi=allMovies.filter((onemovie)=>{
   return onemovie["category"]===typeOfMovie
 })
-  console.log(vyslednefilmi)
+
   return <div>
     <div>
       {
-        categories.map((onecategory)=>{
-          return <button>{onecategory}</button>
+        categories.map((onecategory,index)=>{
+          return <button key={index} onClick={()=>settypeOfMovie(onecategory)}>{onecategory}</button>
         })
       }
     </div>
@@ -21,7 +21,7 @@ const vyslednefilmi=allMovies.filter((onemovie)=>{
         vyslednefilmi.map((onemovie)=>{
           const {id,image,title,age,tags,description}=onemovie
 
-          return <div>
+          return <div key={id}>
             <img src={image} alt="" />
             <h2>{title}</h2>
             <p>{age}</p>
