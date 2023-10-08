@@ -11,6 +11,13 @@ const vyslednefilmi=allMovies.filter((onemovie)=>{
   return <div>
     <div>
       {
+        categories.map((onecategory)=>{
+          return <button>{onecategory}</button>
+        })
+      }
+    </div>
+    <div>
+      {
         vyslednefilmi.map((onemovie)=>{
           const {id,image,title,age,tags,description}=onemovie
 
