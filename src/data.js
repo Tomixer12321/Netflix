@@ -4,6 +4,9 @@ import image3 from "./images/movie3.png"
 import image4 from "./images/movie4.png"
 import image5 from "./images/movie5.png"
 import image6 from "./images/movie6.png"
+import image7 from "./images/movie7.png"
+import image8 from "./images/movie8.png"
+
 
 
 const allMovies = [
@@ -65,6 +68,25 @@ const allMovies = [
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
         category: "akční"
     },
+    {
+        id: 7,
+        image: image7,
+        title: "Život",
+        age: "+13",
+        tags: "Vesmír * Napínavý * Nebezpečí",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+        category: "horor"
+    },
+    {
+        id: 8,
+        image: image8,
+        title: "Kód za miliardu dolarů",
+        age: "+13",
+        tags: "IT * Napínavý",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+        category: "horor"
+    },
+
 ]
 
 
