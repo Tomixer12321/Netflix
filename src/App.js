@@ -9,19 +9,19 @@ const vyslednefilmi=allMovies.filter((onemovie)=>{
 })
 
   return <div>
-    <div>
+    <div className="all-buttons">
       {
         categories.map((onecategory,index)=>{
           return <button key={index} onClick={()=>settypeOfMovie(onecategory)}>{onecategory}</button>
         })
       }
     </div>
-    <div>
+    <div className="all-movies">
       {
         vyslednefilmi.map((onemovie)=>{
           const {id,image,title,age,tags,description}=onemovie
 
-          return <div key={id}>
+          return <div className="one-movie" key={id}>
             <img src={image} alt="" />
             <h2>{title}</h2>
             <p>{age}</p>
